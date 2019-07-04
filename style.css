@@ -9,6 +9,7 @@
     font-size: 3.5rem;
     padding: 5rem 3rem;
     text-align: center;
+    max-width: 100%;
     text-rendering: optimizeLegibility;
     color: #131313;
     background-color: #e7e5e4;
@@ -17,4 +18,26 @@
   }
   .section-heading{
     color: red;
+  }
+  .team__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .team__item{
+    flex: 25%;
+    background-color: #222;
+    color: #ffffff;
+    text-align: center;
+    margin: 4px 1px;
+  }
+  @media (max-width: 400px){
+    .team__container{
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 768px){
+    .team__item{
+      flex: 50%;
+    }
   }
